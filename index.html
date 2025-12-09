@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>한빛건설 (예시) | 신뢰와 기술로 함께합니다</title>
+  <meta name="description" content="한빛건설 - 주택·상업시설·리모델링 전문. 안전하고 신뢰할 수 있는 공사 경험을 제공합니다." />
+  <link rel="icon" href="assets/favicon.png" />
+  <!-- 구글폰트 예시 -->
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;700&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --brand:#0b5fa5; /* 신뢰감 있는 파랑 */
+      --accent:#f05a28;
+      --bg:#fafafa;
+      --text:#222;
+      --maxw:1000px;
+    }
+    *{box-sizing:border-box}
+    body{font-family:'Noto Sans KR',system-ui,-apple-system; margin:0; color:var(--text); background:var(--bg); line-height:1.6}
+    header{background:white; border-bottom:1px solid #eee; position:sticky; top:0; z-index:10}
+    .container{max-width:var(--maxw); margin:0 auto; padding:0 20px}
+    .nav{
+      display:flex; align-items:center; justify-content:space-between; height:64px;
+    }
+    .logo{display:flex; gap:12px; align-items:center}
+    .logo img{height:40px}
+    .logo .title{font-weight:700; color:var(--brand)}
+    nav ul{display:flex; gap:16px; margin:0; padding:0; list-style:none}
+    nav a{color:#444; text-decoration:none; padding:10px 8px; border-radius:6px}
+    nav a:hover, nav a:focus{background:#f1f6fb}
+    .hero{
+      background: linear-gradient(90deg, rgba(11,95,165,0.08), rgba(240,90,40,0.02));
+      padding:40px 0;
+    }
+    .hero-inner{display:flex; gap:32px; align-items:center; justify-content:space-between; flex-wrap:wrap}
+    .hero-text{flex:1 1 420px}
+    .kicker{display:inline-block; background:var(--brand); color:white; padding:6px 10px; border-radius:6px; font-weight:700}
+    h1{margin:14px 0 8px; font-size:28px}
+    p.lead{margin:0 0 14px; color:#444}
+    .cta{display:inline-block; background:var(--accent); color:white; padding:12px 16px; border-radius:8px; text-decoration:none}
+    .hero-img{flex:0 1 420px; text-align:center}
+    .hero-img img{max-width:100%; border-radius:8px; box-shadow:0 6px 18px rgba(0,0,0,0.08)}
+
+    /* main sections */
+    main{padding:28px 0}
+    section.card{background:white; padding:20px; border-radius:8px; box-shadow: 0 4px 12px rgba(9,30,66,0.04); margin-bottom:18px}
+    .grid{display:grid; grid-template-columns:1fr 320px; gap:20px}
+    .history li{margin-bottom:8px}
+    .contact .phone{font-size:20px; color:var(--brand); font-weight:700}
+    .map iframe{width:100%; height:280px; border:0; border-radius:8px}
+
+    footer{padding:20px 0; text-align:center; font-size:14px; color:#666}
+
+    /* responsive */
+    @media (max-width:800px){
+      .grid{grid-template-columns:1fr}
+      h1{font-size:22px}
+      .nav{height:56px}
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container nav" role="navigation" aria-label="주요 메뉴">
+      <div class="logo">
+        <!-- 없는 경우 텍스트 로고 사용 -->
+        <!-- <img src="assets/logo.png" alt="한빛건설 로고"> -->
+        <div style="font-weight:700;color:var(--brand)">한빛건설</div>
+        <div style="font-size:13px;color:#888">신뢰와 기술로 함께합니다</div>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="#home">홈</a></li>
+          <li><a href="#about">회사 소개</a></li>
+          <li><a href="#history">연혁</a></li>
+          <li><a href="#map">찾아오는 길</a></li>
+          <li><a href="#contact">전화번호</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section id="home" class="hero">
+    <div class="container hero-inner">
+      <div class="hero-text">
+        <span class="kicker">전문 공사</span>
+        <h1>믿고 맡기는 시공, 안전한 결과</h1>
+        <p class="lead">한빛건설은 주택, 상업시설, 리모델링 등 다양한 시공 경험을 바탕으로 안전하고 만족스러운 결과를 제공합니다.</p>
+        <a class="cta" href="#contact">문의전화: 02-1234-5678</a>
+      </div>
+      <div class="hero-img">
+        <img src="assets/hero.jpg" alt="공사 현장 이미지(예시)">
+      </div>
+    </div>
+  </section>
+
+  <main class="container">
+    <section id="about" class="card" aria-labelledby="about-title">
+      <h2 id="about-title">회사 소개</h2>
+      <p>한빛건설은 안전을 최우선으로 생각하는 건설회사입니다. 설계부터 시공, 사후관리까지 책임지는 원스톱 서비스를 제공합니다. 숙련된 기술자와 현장 관리 시스템으로 공정과 품질을 관리합니다.</p>
+      <ul>
+        <li>주요 사업: 주택 신축, 상업시설 시공, 리모델링</li>
+        <li>안전관리 체계: 정기 안전점검, 현장 교육 수행</li>
+        <li>품질 보증: 준공 후 사후 A/S 지원</li>
+      </ul>
+    </section>
+
+    <section class="card grid">
+      <div>
+        <h3 id="history">연혁</h3>
+        <ul class="history">
+          <li><strong>2024</strong> - 법인 설립 및 첫 공동주택 공사 착공</li>
+          <li><strong>2025</strong> - 상업시설 공사 다수 납품</li>
+          <li><strong>2026</strong> - 품질관리 시스템 도입</li>
+          <li><strong>2027</strong> - 리모델링 전문팀 구성</li>
+        </ul>
+      </div>
+      <aside>
+        <h4>핵심 연락처</h4>
+        <p class="contact"><span class="phone">02-1234-5678</span></p>
+        <p>이메일: <a href="mailto:info@hanbitcons.co.kr">info@hanbitcons.co.kr</a></p>
+      </aside>
+    </section>
+
+    <section id="map" class="card">
+      <h3>찾아오는 길</h3>
+      <p>서울특별시 마포구 홍익로 123 (홍대입구역 인근)</p>
+      <div class="map" aria-label="찾아오는 길 지도">
+        <!-- 구글지도 공유 링크로 iframe 넣기: 실제 주소의 공유 iframe을 사용하세요 -->
+        <!-- 예시: 아래 src를 본인 위치 공유 iframe으로 교체 -->
+        <iframe src="https://www.google.com/maps?q=홍대입구역&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+      <p style="margin-top:8px;color:#666;font-size:14px">대중교통: 홍대입구역 2번 출구 도보 7분 / 주차: 인근 유료주차장 이용</p>
+    </section>
+
+    <section id="contact" class="card">
+      <h3>전화번호</h3>
+      <p>대표전화: <a class="phone" href="tel:0212345678">02-1234-5678</a></p>
+      <p>업무시간: 평일 09:00 ~ 18:00 (공휴일 휴무)</p>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      © <span id="year"></span> 한빛건설 | 대표전화 02-1234-5678 | 서울특별시 마포구 홍익로 123
+    </div>
+  </footer>
+
+  <script>
+    // 현재 연도 자동 표시
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // 부드러운 스크롤(해시 링크)
+    document.querySelectorAll('a[href^="#"]').forEach(a=>{
+      a.addEventListener('click', e=>{
+        e.preventDefault();
+        const target = document.querySelector(a.getAttribute('href'));
+        if(target) target.scrollIntoView({behavior:'smooth', block:'start'});
+      })
+    });
+  </script>
+</body>
+</html>
